@@ -4,11 +4,22 @@
 
 .app-header h1 {
   flex-grow: 1;
-  color: #FA8072;
-  
+  font-size: 40px;
+  font-weight: 600;
+  outline: none;
+  background: linear-gradient(135deg, #5199FF 0%, #FF756B 25%, #00ffc8 50%, #FF756B 75%, #5199FF 100%);
+  background-size: 400%;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  animation: animate 10s linear infinite;
 }
+@keyframes animate {
+  to{
+  background-position: 400%;
+  }
+}  
 
 .app-header h2 {
   font-size: 1rem;
-  color: rgb(141, 141, 141);
+  color: #949494
 }
